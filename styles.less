@@ -1,0 +1,165 @@
+/*Fontes*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+//Cores
+
+@cor-azul: #0072c8;
+@cor-azul-escuro: #01478c;
+@cor-branco: #fff;
+@cor-cinza-claro: #ced4da;
+@cor-verde: #4db101;
+
+//Bordas
+
+@raio-borda: .25rem;
+
+/*Regras CSS*/
+
+body {
+	background: url(background.jpg);
+	background-size: cover;
+	color: @cor-branco;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.col-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-33 {
+	flex: 0 0 33.33%;
+    max-width: 33.33%;
+    position: relative;
+    width: 100%;
+}
+
+.col-50 {
+	flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+}
+
+.col-100 {
+	flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.form-txt {
+	border: 1px solid @cor-cinza-claro;
+	border-radius: @raio-borda;
+	display: block;
+    font-size: 1rem;
+	height: calc(2rem);
+    line-height: 1.5;
+    padding: .375rem .75rem;
+}
+
+.form-txt-40 {
+	width: 40%;
+}
+
+.form-txt-80 {
+	width: 80%;
+}
+
+.form-txt-90 {
+	width: 90%;
+}
+
+.form-sl {
+	background: fade(@cor-azul-escuro, 95);
+	border: 1px solid @cor-azul-escuro;
+	border-radius: @raio-borda;
+	color: @cor-branco;
+	display: block;
+    font-size: 1rem;
+	font-weight: bold;
+	height: calc(2.85rem);
+    line-height: 1.5;
+    padding: .375rem .75rem;
+}
+
+.form-sl-80 {
+	width: 85%;
+}
+
+.wrapper {
+	height: 385px;
+	margin: 80px auto 0;
+	width: 940px;
+}
+
+.rotulo {
+	background: fade(@cor-azul, 95);
+	border-top-left-radius: @raio-borda;
+	border-top-right-radius: @raio-borda;
+	display: block;
+	font-size: 15px;
+	height: 20px;
+	padding: 10px 20px;
+	width: 135px;
+}
+
+.busca {
+	background: fade(@cor-azul, 95);
+	border-top-right-radius: @raio-borda;
+	height: 285px;
+	padding: 20px;
+    position: relative;
+	width: 940px;
+
+	.col-flex h2 {
+		margin-top: 0;
+	}
+
+	.col-flex .econometro {
+		margin-right: 40px;
+		position: absolute;
+		right: 0;
+	}
+
+	.col-flex label {
+	    display: inline-block;
+	    font-size: 14px;
+	    margin-bottom: 10px;
+	    width: auto;
+	}
+
+	.col-flex .ida-volta {
+		margin-bottom: 10px;
+
+		label {
+			font-size: 13px;
+		}
+
+		input {
+			margin-top: 1px;
+		    vertical-align: middle;
+		}
+	}
+
+	.col-50 .origem {
+		margin: 0 0 20px;
+	}
+
+	.col-50 .destino {
+		margin: 0 0 20px;
+	}
+}
+
+.pesquisar {
+	background: @cor-verde;
+	color: @cor-branco;
+	display: block;
+	font-size: 20px;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ViajaNet - Passagens Aéreas com economia garantida!</title>
+	<link rel="stylesheet/less" type="text/css" href="styles.less" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+</head>
+<body>
+	<div class="wrapper">
+		<span class="rotulo">Passagens Aéreas</span>
+		<section class="busca">
+			<div class="col-flex">
+				<h2>Encontre os melhores preços e boa viagem!</h2>
+				<img class="econometro" src="econometro.png" alt="Economia Garantida" />
+				<div class="col-100 ida-volta">
+					<input type="radio" name="ida-volta" id="ida-volta" />
+					<label for="ida-volta">Ida e Volta</label>
+				</div>
+				<div class="col-50">
+					<div class="col-100 origem">
+						<label for="origem">Origem</label>
+						<input type="text" name="origem" id="origem" class="form-txt form-txt-90" />
+					</div>
+					<div class="col-flex">
+						<div class="col-50">
+							<label for="data-ida">Data de Ida</label>
+							<input type="text" name="data-ida" id="data-ida" class="form-txt form-txt-80" />
+						</div>
+						<div class="col-50">
+							<label for="data-ida">Data de Volta</label>
+							<input type="text" name="data-volta" id="data-volta" class="form-txt form-txt-80" />
+						</div>
+					</div>
+				</div>
+				<div class="col-50">
+					<div class="col-100 destino">
+						<label for="destino">Destino</label>
+						<input type="text" name="destino" id="destino" class="form-txt form-txt-90">
+					</div>
+					<div class="col-flex">
+						<div class="col-33">
+							<label for="adultos">Adultos</label>
+							<select name="adultos" id="adultos" class="form-sl form-sl-80">
+								<option value="1">1 Adulto</option>
+								<option value="2">2 Adultos</option>
+							</select>
+						</div>
+						<div class="col-33">
+							<label for="criancas">Crianças</label>
+							<select name="criancas" id="criancas" class="form-sl form-sl-80">
+								<option value="">Nenhuma</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select>
+						</div>
+						<div class="col-33">
+							<label for="bebes">Bebês</label>
+							<select name="bebes" id="bebes" class="form-sl form-sl-80">
+								<option value="">Nenhum</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<a href="javascript:;" class="pesquisar">Pesquisar</a>
+	</div>
+</body>
+</html>
