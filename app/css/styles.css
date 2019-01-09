@@ -1,0 +1,133 @@
+/*Fontes*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+/*Regras CSS*/
+body {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.col-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-33 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  position: relative;
+  width: 100%;
+}
+.col-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+}
+.col-100 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
+.form-txt {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  display: block;
+  font-size: 1rem;
+  height: calc(2rem);
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+}
+.form-txt-40 {
+  width: 40%;
+}
+.form-txt-80 {
+  width: 80%;
+}
+.form-txt-90 {
+  width: 90%;
+}
+.form-sl {
+  background: rgba(1, 71, 140, 0.95);
+  border: 1px solid #01478c;
+  border-radius: 0.25rem;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  height: calc(2.85rem);
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+}
+.form-sl-80 {
+  width: 85%;
+}
+.wrapper {
+  height: 385px;
+  margin: 80px auto 0;
+  width: 940px;
+}
+.rotulo {
+  background: rgba(0, 114, 200, 0.95);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  display: block;
+  font-size: 15px;
+  height: 20px;
+  padding: 10px 20px;
+  width: 135px;
+}
+.busca {
+  background: rgba(0, 114, 200, 0.95);
+  border-top-right-radius: 0.25rem;
+  height: 285px;
+  padding: 20px;
+  position: relative;
+  width: 940px;
+}
+.busca .col-flex h2 {
+  margin-top: 0;
+}
+.busca .col-flex .econometro {
+  margin-right: 40px;
+  position: absolute;
+  right: 0;
+}
+.busca .col-flex label {
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  width: auto;
+}
+.busca .col-flex .ida-volta {
+  margin-bottom: 10px;
+}
+.busca .col-flex .ida-volta label {
+  font-size: 13px;
+}
+.busca .col-flex .ida-volta input {
+  margin-top: 1px;
+  vertical-align: middle;
+}
+.busca .col-50 .origem {
+  margin: 0 0 20px;
+}
+.busca .col-50 .destino {
+  margin: 0 0 20px;
+}
+.pesquisar {
+  background: #4db101;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}

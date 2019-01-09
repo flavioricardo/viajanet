@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html ng-app="httpApp">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ViajaNet - Passagens Aéreas com economia garantida!</title>
-	<link rel="stylesheet/less" type="text/css" href="styles.less" />
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+	<script src="js/lib/xml2json.min.js"></script>
+	<script src="js/controllers/main.js"></script>
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper" ng-controller="httpController">
 		<span class="rotulo">Passagens Aéreas</span>
 		<section class="busca">
 			<div class="col-flex">
 				<h2>Encontre os melhores preços e boa viagem!</h2>
-				<img class="econometro" src="econometro.png" alt="Economia Garantida" />
+				<img class="econometro" src="img/econometro.png" alt="Economia Garantida" />
 				<div class="col-100 ida-volta">
 					<input type="radio" name="ida-volta" id="ida-volta" />
 					<label for="ida-volta">Ida e Volta</label>
@@ -22,7 +25,12 @@
 				<div class="col-50">
 					<div class="col-100 origem">
 						<label for="origem">Origem</label>
-						<input type="text" name="origem" id="origem" class="form-txt form-txt-90" />
+						<input type="text" name="origem" id="origem" class="form-txt form-txt-90" autofocus autocomplete="off" ng-keyup="complete(obj.city)" ng-model="obj.city" />
+						<ul ng-if="obj.data.length > 0" class="list-group">
+							<li class="list-group-item" ng-click="obj.city = citydata; obj.data={};" ng-repeat="citydata in filterCity track by $index">
+								{{citydata}}
+							</li>
+						</ul>
 					</div>
 					<div class="col-flex">
 						<div class="col-50">

@@ -17,7 +17,7 @@
 /*Regras CSS*/
 
 body {
-	background: url(background.jpg);
+	background: url(../img/background.jpg);
 	background-size: cover;
 	color: @cor-branco;
 	font-family: 'Montserrat', sans-serif;
@@ -150,6 +150,32 @@ body {
 
 	.col-50 .destino {
 		margin: 0 0 20px;
+	}
+}
+
+/* Autocomplete */
+
+.list-group {
+	background: @cor-branco;
+	border: 1px solid @cor-cinza-claro;
+	border-radius: @raio-borda;
+    font-size: 13px;
+    margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 999;
+    width: 95%;
+
+	.list-group-item {
+		color: @cor-azul-escuro;
+		cursor: pointer;
+		list-style: none;
+		margin: 0;
+		padding: 5px;
+
+		&:hover {
+			background: @cor-cinza-claro;
+		}
 	}
 }
 
