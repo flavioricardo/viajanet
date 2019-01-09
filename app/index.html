@@ -27,8 +27,8 @@
 						<label for="origem">Origem</label>
 						<input type="text" name="origem" id="origem" class="form-txt form-txt-90" autofocus autocomplete="off" ng-keyup="complete(obj.city)" ng-model="obj.city" />
 						<ul ng-if="obj.data.length > 0" class="list-group">
-							<li class="list-group-item" ng-click="obj.city = citydata; obj.data={};" ng-repeat="citydata in filterCity track by $index">
-								{{citydata}}
+							<li class="list-group-item" ng-click="obj.city = locationData; obj.data = {};" ng-repeat="locationData in filterCity track by $index">
+								{{locationData}}
 							</li>
 						</ul>
 					</div>
@@ -46,7 +46,12 @@
 				<div class="col-50">
 					<div class="col-100 destino">
 						<label for="destino">Destino</label>
-						<input type="text" name="destino" id="destino" class="form-txt form-txt-90">
+						<input type="text" name="destino" id="destino" class="form-txt form-txt-90" autofocus autocomplete="off" ng-keyup="complete(obj.city)" ng-model="obj.city" />
+						<ul ng-if="obj.data.length > 0" class="list-group">
+							<li class="list-group-item" ng-click="obj.city = locationData; obj.data = {};" ng-repeat="locationData in filterCity track by $index">
+								{{locationData}}
+							</li>
+						</ul>
 					</div>
 					<div class="col-flex">
 						<div class="col-33">
