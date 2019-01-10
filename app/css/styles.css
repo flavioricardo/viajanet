@@ -80,14 +80,14 @@ body {
   display: block;
   font-size: 15px;
   height: 20px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   width: 135px;
 }
 .busca {
   background: rgba(0, 114, 200, 0.95);
   border-top-right-radius: 0.25rem;
   height: 285px;
-  padding: 20px;
+  padding: 20px 10px 20px 30px;
   position: relative;
   width: 940px;
 }
@@ -121,6 +121,29 @@ body {
 .busca .col-50 .destino {
   margin: 0 0 20px;
 }
+/* Autocomplete */
+.list-group {
+  background: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 999;
+  width: 95%;
+}
+.list-group .list-group-item {
+  color: #01478c;
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+}
+.list-group .list-group-item:hover {
+  background: #ced4da;
+}
+/* Botão */
 .pesquisar {
   background: #4db101;
   color: #fff;
@@ -130,4 +153,65 @@ body {
   text-align: center;
   text-decoration: none;
   width: 100%;
+}
+.opcoes {
+  display: none;
+}
+@media (max-width: 576px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper {
+    height: auto;
+    margin: 0;
+    width: 100%;
+  }
+  .rotulo {
+    background: #01478c;
+    border-radius: 0;
+    font-size: 18px;
+    padding: 15px 0;
+    text-align: center;
+    width: auto;
+  }
+  .busca {
+    border-radius: 0;
+    height: auto;
+    margin: 0;
+    padding: 0 0 20px 20px;
+    width: auto;
+  }
+  .busca .col-flex h2 {
+    display: none;
+  }
+  .busca .col-flex .econometro {
+    display: none;
+  }
+  .busca .col-flex .ida-volta {
+    margin: 10px 0;
+  }
+  .busca .col-flex .col-50 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .busca .col-flex .col-25 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .busca .col-33 {
+    margin: 20px 0 0;
+  }
+  .opcoes {
+    display: block;
+    margin: 20px 0 0;
+  }
+  .opcoes a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .pesquisar {
+    width: auto;
+  }
 }
