@@ -102,7 +102,7 @@ body {
 	display: block;
 	font-size: 15px;
 	height: 20px;
-	padding: 10px 20px;
+	padding: 10px 30px;
 	width: 135px;
 }
 
@@ -110,7 +110,7 @@ body {
 	background: fade(@cor-azul, 95);
 	border-top-right-radius: @raio-borda;
 	height: 285px;
-	padding: 20px;
+	padding: 20px 10px 20px 30px;
     position: relative;
 	width: 940px;
 
@@ -179,6 +179,8 @@ body {
 	}
 }
 
+/* Botão */
+
 .pesquisar {
 	background: @cor-verde;
 	color: @cor-branco;
@@ -188,4 +190,79 @@ body {
 	text-align: center;
 	text-decoration: none;
 	width: 100%;
+}
+
+.opcoes {
+	display: none;
+}
+
+@media (max-width: 576px) {
+	html, body {
+		margin: 0;
+		padding: 0;
+		// overflow: hidden;
+	}
+
+	.wrapper {
+		height: auto;
+		margin: 0;
+		width: 100%;
+	}
+
+	.rotulo {
+		background: @cor-azul-escuro;
+		border-radius: 0;
+		font-size: 18px;
+		padding: 15px 0;
+		text-align: center;
+		width: auto;
+	}
+
+	.busca {
+		border-radius: 0;
+		height: auto;
+		margin: 0;
+		padding: 0 0 20px 20px;
+		width: auto;
+
+		.col-flex h2 {
+			display: none;
+		}
+
+		.col-flex .econometro {
+			display: none;
+		}
+
+		.col-flex .ida-volta {
+			margin: 10px 0;
+		}
+
+		.col-flex .col-50 {
+			flex: 0 0 100%;
+    		max-width: 100%;
+		}
+
+		.col-flex .col-25 {
+			flex: 0 0 50%;
+    		max-width: 50%;
+		}
+
+		.col-33 {
+			margin: 20px 0 0;
+		}
+	}
+
+	.opcoes {
+		display: block;
+		margin: 20px 0 0;
+
+		a {
+			color: @cor-branco;
+			text-decoration: none;
+		}
+	}
+
+	.pesquisar {
+		width: auto;
+	}
 }
