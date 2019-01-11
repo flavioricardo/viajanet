@@ -1,14 +1,14 @@
-##Teste Front-end UX ViajaNet
+## Teste Front-end UX ViajaNet
 
 Teste desenvolvido em AngularJS com marcação HTML e CSS em Less.js para a [ViajaNet](https://www.viajanet.com.br/).
 
-##Bibliotecas
+## Bibliotecas
 
 * AngularJS v1.7.5
 * Less - Leaner CSS v3.9.0
 * x2js
 
-##Instalação
+## Instalação
 ```
 npm install
 npm serve
