@@ -16,4 +16,4 @@ npm serve
 
 ## Sobre
 
-[Flavio Ricardo](https://medium.com/@flavioricardo91). Software developer, WordPress, atualmente estudando sobre acessibilidade, escrevo sobre games e partico dança de salão nas horas vagas.
+[Flavio Ricardo](https://medium.com/@flavioricardo91). Software developer, WordPress, atualmente estudando sobre acessibilidade, escrevo sobre games e pratico dança de salão nas horas vagas.
