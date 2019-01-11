@@ -14,6 +14,15 @@
 
 @raio-borda: .25rem;
 
+// Tamanhos
+
+@trinta-tres: 33%;
+@quarenta: 40%;
+@cinquenta: 50%;
+@oitenta: 80%;
+@noventa: 90%;
+@cem: 100%;
+
 /*Regras CSS*/
 
 body {
@@ -30,24 +39,24 @@ body {
 }
 
 .col-33 {
-	flex: 0 0 33.33%;
-    max-width: 33.33%;
+	flex: 0 0 @trinta-tres;
+    max-width: @trinta-tres;
     position: relative;
-    width: 100%;
+    width: @cem;
 }
 
 .col-50 {
-	flex: 0 0 50%;
-    max-width: 50%;
+	flex: 0 0 @cinquenta;
+    max-width: @cinquenta;
     position: relative;
-    width: 100%;
+    width: @cem;
 }
 
 .col-100 {
-	flex: 0 0 100%;
-    max-width: 100%;
+	flex: 0 0 @cem;
+    max-width: @cem;
     position: relative;
-    width: 100%;
+    width: @cem;
 }
 
 .form-txt {
@@ -61,15 +70,15 @@ body {
 }
 
 .form-txt-40 {
-	width: 40%;
+	width: @quarenta;
 }
 
 .form-txt-80 {
-	width: 80%;
+	width: @oitenta;
 }
 
 .form-txt-90 {
-	width: 90%;
+	width: @noventa;
 }
 
 .form-sl {
@@ -189,24 +198,23 @@ body {
 	padding: 10px 20px;
 	text-align: center;
 	text-decoration: none;
-	width: 100%;
+	width: @cem;
 }
 
 .opcoes {
 	display: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 	html, body {
 		margin: 0;
 		padding: 0;
-		// overflow: hidden;
 	}
 
 	.wrapper {
 		height: auto;
 		margin: 0;
-		width: 100%;
+		width: @cem;
 	}
 
 	.rotulo {
@@ -238,13 +246,13 @@ body {
 		}
 
 		.col-flex .col-50 {
-			flex: 0 0 100%;
-    		max-width: 100%;
+			flex: 0 0 @cem;
+    		max-width: @cem;
 		}
 
 		.col-flex .col-25 {
-			flex: 0 0 50%;
-    		max-width: 50%;
+			flex: 0 0 @cinquenta;
+    		max-width: @cinquenta;
 		}
 
 		.col-33 {

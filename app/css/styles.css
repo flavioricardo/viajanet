@@ -18,8 +18,8 @@ body {
   flex-wrap: wrap;
 }
 .col-33 {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
+  flex: 0 0 33%;
+  max-width: 33%;
   position: relative;
   width: 100%;
 }
@@ -157,7 +157,7 @@ body {
 .opcoes {
   display: none;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   html,
   body {
     margin: 0;
