@@ -11,7 +11,7 @@ Teste desenvolvido em AngularJS com marcação HTML e CSS em Less.js para a [Via
 ## Instalação
 ```
 npm install
-npm serve
+npm start
 ```
 
 ## Sobre
